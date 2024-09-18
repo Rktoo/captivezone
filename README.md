@@ -23,7 +23,18 @@ Ce projet est conçue pour démontrer l'utilisation des websockets sans avoir re
     ```bash
         npm i
         npm run dev
-2. Lancer le client :
+2. Créer le fichier env dans le dossier backend et ajouter le token de l'api :
+    ```bash
+        touch .env
+
+3. ### Pour récupérer le token de fast.com
+
+Rendez-vous sur fast.com, ouvrez les outils de développement de votre navigateur, allez dans l'onglet Réseau et copiez le token dans l'URL de la requête qui ressemble à : https://api.fast.com/netflix/speedtest?https=true&token=<le-token>&urlCount=5.    
+
+4. Ajouter votre token en éditant le fichier .env :         
+FAST_SPEED_TOKEN=<votre-token>    
+
+5. Lancer le client :
 Depuis le dossier racine. Naviguer dans le dossier captivezone et ouvrer le terminal, puis exécuter les commandes pour l'installation des dépendances :    
     ```bash
         npm i
