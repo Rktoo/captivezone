@@ -37,7 +37,7 @@ API de Vitesse : Utilisation de l'API de Fast.com pour récupérer les données 
 Rendez-vous sur fast.com, ouvrez les outils de développement de votre navigateur, allez dans l'onglet Réseau et copiez le token dans l'URL de la requête qui ressemble à : https://api.fast.com/netflix/speedtest?https=true&token=le-token&urlCount=5.    
 
 4. Ajouter votre token en éditant le fichier .env :         
-FAST_SPEED_TOKEN=votre-token-a-remplacer-par-le-vraichro
+FAST_SPEED_TOKEN=votre-token-a-remplacer-par-le-vrai
 
 5. Lancer le client :
 Depuis le dossier racine. Naviguer dans le dossier captivezone et ouvrer le terminal, puis exécuter les commandes pour l'installation des dépendances :    
