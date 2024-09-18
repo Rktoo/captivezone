@@ -32,8 +32,8 @@ const ThemeSwitcher = () => {
       <Image
         src={theme === "light" ? "/images/sky.png" :"/images/stars.png"}
         alt="Background"
-        width={900}
-        height={900}
+        width={1280}
+        height={960}
         className='fixed min-h-screen w-screen inset-0 bg-cover opacity-80 -z-10 '
       />
     </nav>

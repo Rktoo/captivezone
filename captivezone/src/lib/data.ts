@@ -1,5 +1,5 @@
 
-type dataType = {
+export type dataType = {
     title : string,
     description : string
 }

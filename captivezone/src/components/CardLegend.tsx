@@ -1,4 +1,6 @@
-export default function CardLegend({title, description}: {title: string, description: string})
+import { dataType } from "@/lib/data";
+
+export default function CardLegend({title, description}: dataType)
 {
     return (
         <div>

@@ -6,9 +6,10 @@ type SpeedometerProps = {
     value: number;
     maxValue: number;
     image: string;
+    width: number;
 };
 
-export default function Speedometer({ label, value, maxValue, image }: SpeedometerProps) {
+export default function Speedometer({ label, value, maxValue, image, width }: SpeedometerProps) {
     const valueFormatted = Number(value.toFixed(2));
 
     return (
@@ -32,8 +33,8 @@ export default function Speedometer({ label, value, maxValue, image }: Speedomet
                 <Image
                 src={image}
                 alt="image"
-                width={100}
-                height={100}
+                width={width}
+                height={width}
                 className="absolute bottom-6"
                 />
             </div>

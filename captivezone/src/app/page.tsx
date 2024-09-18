@@ -31,7 +31,7 @@ export default function Home() {
       <h1 className="text-4xl text-center flex flex-row gap-1">Suivi <span className="hidden md:block">des performances Réseau </span>en temps réel</h1>
       {loading ? <div className="flex flex-col items-center gap-2 ">
         <div
-          className="relative border-2 border-white w-10 h-10 rounded-full z-10 overflow-hidden animate-spin"
+          className="relative border-2 border-white w-10 h-10 rounded-full overflow-hidden animate-spin select-none z-10"
         >
           <span className="z-20 w-[1.12rem] absolute top-0 left-0 bg-black text-transparent">a</span>
           <span className="z-20 w-4 absolute top-0 right-0 bg-green-400 text-transparent">b</span>
@@ -42,9 +42,9 @@ export default function Home() {
       </div>
         :
         <div className="flex  justify-center items-center flex-wrap p-10 gap-4 ">
-          <Speedometer label="Vitesse de connexion" value={Number(networkData.connectionSpeed)} maxValue={100} image="/images/connection.png" />
-          <Speedometer label="Taux de download" value={networkData.downloadSpeed} maxValue={100} image="/images/download.png" />
-          <Speedometer label="Taux d'upload" value={networkData.uploadSpeed} maxValue={100} image="/images/upload.png" />
+          <Speedometer label="Vitesse de connexion" value={Number(networkData.connectionSpeed)} maxValue={100} image="/images/connection.png" width={100}/>
+          <Speedometer label="Taux de download" value={networkData.downloadSpeed} maxValue={100} image="/images/download.png" width={100}/>
+          <Speedometer label="Taux d'upload" value={networkData.uploadSpeed} maxValue={100} image="/images/upload.png" width={80}/>
         </div>
       }
     </div>

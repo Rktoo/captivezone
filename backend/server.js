@@ -65,7 +65,7 @@ io.on('connection', (socket) => {
         const data = await getNetworkSpeed();
         if (data) {
             socket.emit('networkData', data);
-        }
+        } 
     }, 5000);
 
     // Lorsque le client se déconnecte
