@@ -1,5 +1,7 @@
 # Captive zone
 
+![banner](banner.png)
+
 Bienvenue dans Captive zone. Ce projet est un exemple de mise en oeuvre d'une application fullstack en JavaScript, avec une structure simple pour le client et le serveur.
 
 ## Table des matières
