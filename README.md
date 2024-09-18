@@ -9,7 +9,12 @@ Bienvenue dans Captive zone. Ce projet est un exemple de mise en oeuvre d'une ap
 - [Licence](#Licence)
 
 ## Description
-Ce projet est conçue pour démontrer l'utilisation des websockets sans avoir recours à des méthodes HTTP. Cela affiche en temps réel la vitesse de connexion de l'utilisateur, ainsi que le taux de download et le taux d'upload.
+Ce projet est conçue pour démontrer l'utilisation des websockets sans avoir recours à des méthodes HTTP. Cela affiche en temps réel la vitesse de connexion de l'utilisateur, ainsi que le taux de download et le taux d'upload. La plateforme est conçue pour offrir une interface utilisateur moderne et réactive, adaptée aux différents appareils tels que les ordinateurs, les tablettes et les smartphones.
+
+#### Technologies Utilisées
+Backend : Node.js avec Express.js, utilisé pour la gestion des requêtes serveur et la communication en temps réel via WebSocket.
+Frontend : Next.js, pour la création d'une interface utilisateur dynamique et responsive avec un rendu côté serveur (Server-Side Rendering).
+API de Vitesse : Utilisation de l'API de Fast.com pour récupérer les données de vitesse de connexion.
 
 ## Fonctionnalités
 - Client avec NextJs et qui offre plus de contrôle sur la stylisation
