@@ -15,7 +15,7 @@ export default function Home() {
   let socket: Socket;
 
   useEffect(() => {
-    socket = io("http://localhost:4000");
+    socket = io(`${process.env.BACKEND_API}`);
     socket.on("networkData", (data: NetworkData) => {
       setNetworkData(data);
       setLoading(!loading);

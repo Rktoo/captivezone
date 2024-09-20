@@ -4,6 +4,8 @@
 
 Bienvenue dans Captive zone. Ce projet est un exemple de mise en oeuvre d'une application fullstack en JavaScript, avec une structure simple pour le client et le serveur.
 
+**Visiter le site**:[https://captivezone.vercel.app/](https://captivezone.vercel.app/)
+
 ## Table des matières
 - [Description](#description)
 - [Fonctionnalités](#fonctionnalités)
