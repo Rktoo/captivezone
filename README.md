@@ -47,7 +47,14 @@ Rendez-vous sur fast.com, ouvrez les outils de développement de votre navigateu
 FAST_SPEED_TOKEN=votre-token-a-remplacer-par-le-vrai
 
 6. Lancer le client :
-Depuis le dossier racine. Naviguer dans le dossier captivezone et ouvrer le terminal, puis exécuter les commandes pour l'installation des dépendances :    
+Depuis le dossier racine. Naviguer dans le dossier captivezone.
+Créer un fichier d'environnement et ajouter votre url pour le backend :
+    ```bash
+        touch .env
+Ajouter la variable d'environnement :
+NEXT_PUBLIC_BACKEND_API=localhost:4000
+
+7. Ouvrer le terminal, puis exécuter les commandes pour l'installation des dépendances :    
     ```bash
         npm i
         npm run dev
