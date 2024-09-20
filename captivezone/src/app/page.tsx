@@ -20,7 +20,7 @@ export default function Home() {
       setNetworkData(data);
       setLoading(!loading);
     });
-    console.log(api);
+    
     return () => {
       socket.off('networkData');
     }
