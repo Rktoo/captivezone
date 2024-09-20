@@ -25,23 +25,26 @@ API de Vitesse : Utilisation de l'API de Fast.com pour récupérer les données 
 - Contrôle et filtrage des sources de requête.
 
 ## Installation
-1. Lancer le serveur :
+1. Cloner le depot :
+    ```bash
+        git clone https://github.com/Rktoo/captivezone.git
+2. Lancer le serveur :
  Depuis le dossier racine. Naviguer dans le dossier backend et ouvrer le terminal, puis exécuter les commandes pour l'installation des dépendances :
     ```bash
         npm i
         npm run dev
-2. Créer le fichier env dans le dossier backend et ajouter le token de l'api :
+3. Créer le fichier env dans le dossier backend et ajouter le token de l'api :
     ```bash
         touch .env
 
-3. ### Pour récupérer le token de fast.com
+4. ### Pour récupérer le token de fast.com
 
 Rendez-vous sur fast.com, ouvrez les outils de développement de votre navigateur, allez dans l'onglet Réseau et copiez le token dans l'URL de la requête qui ressemble à : https://api.fast.com/netflix/speedtest?https=true&token=le-token&urlCount=5.    
 
-4. Ajouter votre token en éditant le fichier .env :         
+5. Ajouter votre token en éditant le fichier .env :         
 FAST_SPEED_TOKEN=votre-token-a-remplacer-par-le-vrai
 
-5. Lancer le client :
+6. Lancer le client :
 Depuis le dossier racine. Naviguer dans le dossier captivezone et ouvrer le terminal, puis exécuter les commandes pour l'installation des dépendances :    
     ```bash
         npm i
