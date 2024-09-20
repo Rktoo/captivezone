@@ -11,16 +11,16 @@ export default function Home() {
     connectionSpeed: 0
   });
   const [loading, setLoading] = useState<boolean>(true);
-
+  const api = process.env.NEXT_PUBLIC_BACKEND_API;
   let socket: Socket;
 
   useEffect(() => {
-    socket = io(`${process.env.BACKEND_API}`);
+    socket = io(`${api}`);
     socket.on("networkData", (data: NetworkData) => {
       setNetworkData(data);
       setLoading(!loading);
     });
-
+    console.log(api);
     return () => {
       socket.off('networkData');
     }
