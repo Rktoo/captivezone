@@ -5,7 +5,7 @@ const http = require("http");
 const FastSpeedTest = require("fast-speedtest-api");
 require("dotenv").config();
 
-const PORT = 4000;
+const PORT = process.env.PORT;
 
 const app = express();
 

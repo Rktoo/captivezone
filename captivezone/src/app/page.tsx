@@ -41,7 +41,7 @@ export default function Home() {
         <h3 className="animate-pulse">Chargement</h3>
       </div>
         :
-        <div className="flex  justify-center items-center flex-wrap p-10 gap-4 ">
+        <div className="flex justify-center items-center flex-wrap p-10 gap-4 ">
           <Speedometer label="Vitesse de connexion" value={Number(networkData.connectionSpeed)} maxValue={100} image="/images/connection.png" width={100}/>
           <Speedometer label="Taux de download" value={networkData.downloadSpeed} maxValue={100} image="/images/download.png" width={100}/>
           <Speedometer label="Taux d'upload" value={networkData.uploadSpeed} maxValue={100} image="/images/upload.png" width={80}/>

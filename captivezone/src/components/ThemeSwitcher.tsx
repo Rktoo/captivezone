@@ -34,7 +34,7 @@ const ThemeSwitcher = () => {
         alt="Background"
         width={1280}
         height={960}
-        className='fixed min-h-screen w-screen inset-0 bg-cover opacity-80 -z-10 '
+        className='fixed min-h-screen max-sm:min-h-[120vh] w-screen inset-0 bg-cover bg-repeat opacity-80 -z-10 '
       />
     </nav>
   );
