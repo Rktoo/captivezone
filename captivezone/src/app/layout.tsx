@@ -32,13 +32,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeSwitcher />
+        <header>
+          <ThemeSwitcher />
+        </header>
         <main className="mt-10">
           {children}
         </main>
         <footer className="max-w-4xl mx-auto mb-8 px-10 py-4">
           <div className="border p-4 rounded bg-white/10 backdrop-blur-sm">
-          <h1 className="text-2xl mb-2">Légendes</h1>
+            <h1 className="text-2xl mb-2">Légendes</h1>
             {
               data && data.map((d, i) => {
                 return <CardLegend title={d.title} description={d.description} key={i} />
