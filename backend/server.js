@@ -43,7 +43,7 @@ async function getNetworkSpeed() {
     try {
         const downloadSpeed = await speedtest.getSpeed(); // récupère la vitesse de téléchargement en bytes depuis fast.com
         const uploadSpeed = downloadSpeed * (0.2 + Math.random() * 0.2); // Estimation fictive de l'upload basé sur la vitesse de téléchargement
-        const connectionSpeed = downloadSpeed * (0.5 + Math.random() * 0.5); // Estimation de la vitesse de connexion totale
+        const connectionSpeed = Math.max(downloadSpeed, uploadSpeed) * (1 + Math.random() * 0.2); // Estimation de la vitesse de connexion totale
 
         return {
             connectionSpeed : convertToMbps(connectionSpeed),
